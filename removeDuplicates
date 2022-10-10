@@ -1,0 +1,11 @@
+# Python code to remove duplicate elements
+def RemoveDuplicates(array):
+    final = []
+    for num in array:
+        if num not in final:
+            final.append(num)
+    return final
+     
+# Driver Code
+array = [2, 2, 2, 4, 10, 20, 5, 2, 20, 4]
+print(RemoveDuplicates(array))

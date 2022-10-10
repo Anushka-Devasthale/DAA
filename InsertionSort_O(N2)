@@ -1,0 +1,27 @@
+def InsertionSort(array):
+    for i in range(1, len(array)):
+        current = array[i]
+        j = i -1
+        while(j>=0 and array[j]>current):
+            array[j+1] = array[j]
+            j=j-1
+        array[j+1] = current
+data =[1,5,11, 80, 7,3,8]
+InsertionSort(data)
+print(data)
+
+def InsertionSort2(array):
+    for i in range(1,len(array)):
+        j = i
+        while(array[j-1]>array[j] and j>0):
+            array[j], array[j-1] = array [j-1], array[j]
+            j = j-1
+data =[1,5,11, 80, 7,37,8, 2]
+InsertionSort2(data)
+print(data)
+
+#WorstCase = O(N2)
+#BestCase  = O(n)
+    
+
+    

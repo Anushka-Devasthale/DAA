@@ -1,0 +1,9 @@
+def BubbleSort(array):
+    i=0
+    for i in range(len(array)-1):
+        for j in range(len(array)-1):
+            if array[j]> array[j+1]:
+                array[j], array[j+1] =  array[j+1], array[j]
+    return array
+array= [1,8,2,20,4,7,4,2]
+print(BubbleSort(array))

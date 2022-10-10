@@ -1,0 +1,19 @@
+def LinearSearch(array, n , x):
+    for i in range(0,n):
+        if array[i]==x:
+            return i
+    return -1
+
+array = [1,2,34,5,6,9]
+n = len(array)
+x = int(input("Enter a number: "))
+ans=LinearSearch(array,n,x)
+if (ans==-1):
+    print("Search Failed")
+else:
+    print("Success! Element at index:", ans)
+
+
+#Best Case: O(1)
+#Average Case: O((n+1)/2)
+#Worst Case: O(n)

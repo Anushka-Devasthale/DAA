@@ -1,0 +1,21 @@
+def MedianSortedUnequalArray(array1, array2):
+    array3 = array1+array2
+    n = len(array3)
+    if n %2==0:
+        array3.sort()
+        l= int(n/2)
+        i = l-1
+        mid = array3[i]+array3[l]
+        median = mid/2
+        print(median)
+    else:
+        array3.sort()
+        l = int(n//2)
+        print(array3[l])
+
+    
+
+
+array1 = [1,2]
+array2 = [3,4]
+MedianSortedUnequalArray(array1, array2)

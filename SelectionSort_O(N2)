@@ -1,0 +1,13 @@
+def SelectionSort(array):
+    for i in range(0, len(array)-1):
+        current_minimum = i
+        for j in range(i+1, len(array)):
+            if array[j]<array[current_minimum]:
+                current_minimum = j
+        array[i], array[current_minimum] = array[current_minimum], array[i]
+              
+array = [1,5,7,2,7,12,45,2]
+SelectionSort(array)
+print(array)
+            
+#Worst Case- O(N2)
